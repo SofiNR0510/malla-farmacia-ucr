@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Curricular - Farmacia UCR</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Malla Curricular - Farmacia UCR</h1>
+  </header>
+
+  <main>
+    <div class="tabla-malla">
+      <!-- Semestre 1 -->
+      <div class="semestre">
+        <h2>Semestre 1</h2>
+        <div class="materias">
+          <div class="materia" data-id="qfb1001" data-creditos="4" data-semestre="1">
+            <h3>Biología Celular</h3>
+            <p>Créditos: 4</p>
+          </div>
+          <div class="materia" data-id="qfb1002" data-creditos="3" data-semestre="1">
+            <h3>Química General</h3>
+            <p>Créditos: 3</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Semestre 2 -->
+      <div class="semestre">
+        <h2>Semestre 2</h2>
+        <div class="materias">
+          <div class="materia bloqueada" data-id="qfb2001" data-creditos="4" data-semestre="2" data-requisitos="qfb1002">
+            <h3>Química Orgánica I</h3>
+            <p>Créditos: 4</p>
+          </div>
+          <div class="materia bloqueada" data-id="qfb2002" data-creditos="3" data-semestre="2" data-requisitos="qfb1001">
+            <h3>Microbiología Básica</h3>
+            <p>Créditos: 3</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aquí seguirían los demás semestres... -->
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
