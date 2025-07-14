@@ -1,39 +1,42 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background-color: #f0f8ff;
+  background-color: #f0faff;
 }
 
 header {
-  background-color: #007acc;
+  background-color: #0288d1;
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-main {
-  padding: 2rem;
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
 }
 
 .tabla-malla {
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
   overflow-x: auto;
+  padding: 2rem;
   gap: 2rem;
 }
 
 .semestre {
-  min-width: 200px;
-  background-color: #e6f7ff;
+  min-width: 240px;
+  background-color: #e0f7fa;
+  border-radius: 16px;
   padding: 1rem;
-  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .semestre h2 {
   text-align: center;
-  color: #005b99;
+  color: #0277bd;
+  margin-bottom: 1rem;
 }
 
 .materias {
@@ -43,20 +46,42 @@ main {
 }
 
 .materia {
-  background-color: #cceeff;
-  border-left: 6px solid #0099cc;
+  background-color: #b2ebf2;
+  border-left: 5px solid #0097a7;
   padding: 1rem;
   border-radius: 10px;
-  transition: all 0.3s ease;
+  transition: transform 0.2s, background-color 0.3s;
+  position: relative;
+}
+
+.materia:hover {
+  transform: scale(1.02);
 }
 
 .materia.bloqueada {
   background-color: #ddd;
-  color: #666;
-  border-left: 6px solid #999;
+  color: #777;
+  border-left-color: #aaa;
   cursor: not-allowed;
+  pointer-events: none;
 }
 
 .materia h3 {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+button.aprobar-btn {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.aprobar-btn:hover {
+  background-color: #004d40;
 }
