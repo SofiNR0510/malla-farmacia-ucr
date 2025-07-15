@@ -66,6 +66,12 @@ h1 {
   pointer-events: none;
 }
 
+.materia.aprobada {
+  background-color: #c8e6c9;
+  border-left-color: #2e7d32;
+  color: #2e7d32;
+}
+
 .materia h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1rem;
