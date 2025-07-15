@@ -12,7 +12,73 @@
   </header>
 
   <main class="tabla-malla">
-    <!-- Aquí irán los 11 semestres. Te los paso enseguida por partes -->
+    <!-- SEMESTRE 1 -->
+<section class="semestre">
+  <h2>Semestre 1</h2>
+  <div class="materias">
+    <div class="materia" data-id="BIOL-1001">
+      <h3>BIOL-1001</h3>
+      <p>Créditos: 4</p>
+      <button class="aprobar-btn">Aprobar</button>
+    </div>
+    <div class="materia" data-id="QF-1001">
+      <h3>QF-1001</h3>
+      <p>Créditos: 3</p>
+      <button class="aprobar-btn">Aprobar</button>
+    </div>
+  </div>
+</section>
+
+<!-- SEMESTRE 2 -->
+<section class="semestre">
+  <h2>Semestre 2</h2>
+  <div class="materias">
+    <div class="materia" data-id="QF-1102" data-requisitos="QF-1001">
+      <h3>QF-1102</h3>
+      <p>Créditos: 4</p>
+      <button class="aprobar-btn">Aprobar</button>
+    </div>
+    <div class="materia" data-id="BIOL-1101" data-requisitos="BIOL-1001">
+      <h3>BIOL-1101</h3>
+      <p>Créditos: 3</p>
+      <button class="aprobar-btn">Aprobar</button>
+    </div>
+  </div>
+</section>
+
+<!-- SEMESTRE 3 -->
+<section class="semestre">
+  <h2>Semestre 3</h2>
+  <div class="materias">
+    <div class="materia" data-id="QF-2103" data-requisitos="QF-1102">
+      <h3>QF-2103</h3>
+      <p>Créditos: 3</p>
+      <button class="aprobar-btn">Aprobar</button>
+    </div>
+    <div class="materia" data-id="BIOL-2102" data-requisitos="BIOL-1101">
+      <h3>BIOL-2102</h3>
+      <p>Créditos: 3</p>
+      <button class="aprobar-btn">Aprobar</button>
+    </div>
+  </div>
+</section>
+
+<!-- SEMESTRE 4 -->
+<section class="semestre">
+  <h2>Semestre 4</h2>
+  <div class="materias">
+    <div class="materia" data-id="QF-2204" data-requisitos="QF-2103">
+      <h3>QF-2204</h3>
+      <p>Créditos: 4</p>
+      <button class="aprobar-btn">Aprobar</button>
+    </div>
+    <div class="materia" data-id="BIOL-2203" data-requisitos="BIOL-2102">
+      <h3>BIOL-2203</h3>
+      <p>Créditos: 3</p>
+      <button class="aprobar-btn">Aprobar</button>
+    </div>
+  </div>
+</section>
   </main>
 
   <script src="script.js"></script>
